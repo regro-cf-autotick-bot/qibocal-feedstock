@@ -34,7 +34,7 @@ requirements:
     - lmfit >=1.0.3
     - networkx >=3.0
     - pydantic >=1.10.5
-    - pint >=0.20.1
+    - pint >=0.20.1,<0.21
 
 test:
   imports:
