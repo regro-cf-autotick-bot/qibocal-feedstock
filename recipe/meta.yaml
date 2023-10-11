@@ -21,11 +21,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.9,<3.12
     - poetry-core >=1.0.0
     - pip
   run:
-    - python >=3.9
+    - python >=3.9,<3.12
     - qibolab >=0.1.0
     - qibo >=0.2.0
     - numpy >=1.24.0
