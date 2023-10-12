@@ -1,5 +1,5 @@
 {% set name = "qibocal" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/qiboteam/qibocal/archive/v{{ version }}.tar.gz
-  sha256: c15a202af06d60c97745f7e16f269c99910d6301fe5422356ddc101c86484299
+  sha256: 2589973885e91193f90a6a140be02a5a1ae090d86cd009ce6bbcb216d66c6734
 
 build:
   entry_points:
@@ -21,11 +21,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.9,<3.12
     - poetry-core >=1.0.0
     - pip
   run:
-    - python >=3.9
+    - python >=3.9,<3.12
     - qibolab >=0.1.0
     - qibo >=0.2.0
     - numpy >=1.24.0
