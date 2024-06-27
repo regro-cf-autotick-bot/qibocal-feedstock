@@ -1,5 +1,5 @@
 {% set name = "qibocal" %}
-{% set version = "0.0.9" %}
+{% set version = "0.0.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/qiboteam/qibocal/archive/v{{ version }}.tar.gz
-  sha256: 968ebf9ce5937905a1d05dcc4046254231509b8b8b1d88c215393d2f383c9417
+  sha256: 1b94f8d80764a1ce3d0b02363871d9616f0ea6d557be0d4ad03b74b92f91fa9e
 
 build:
   entry_points:
