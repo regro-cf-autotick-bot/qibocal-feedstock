@@ -17,15 +17,15 @@ build:
     - qq-upload = qibocal:upload
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9,<3.12
+    - python {{ python_min }}
     - poetry-core >=1.0.0
     - pip
   run:
-    - python >=3.9,<3.12
+    - python >={{ python_min }},<3.12
     - qibolab >=0.1.0
     - qibo >=0.2.0
     - numpy >=1.24.0
@@ -45,6 +45,8 @@ requirements:
     - setuptools >=67.8.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - qibocal
 
